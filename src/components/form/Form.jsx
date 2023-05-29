@@ -9,6 +9,7 @@ const Form = ()=> {
     const [nombre, setNombre]= useState("")
     const [puesto, setPuesto]= useState("")
     const [foto, setFoto]= useState("")
+    const [equipo, setEquipo]= useState("")
 
     const manejarSubmit = (e)=>{
         e.preventDefault()
@@ -30,7 +31,7 @@ const Form = ()=> {
         valorInput={puesto} setValor={setPuesto}/>
         <TextField titulo= "Foto" placeholder="Ingresar enlace de foto" required
         valorInput={foto} setValor={setFoto}/>
-        <OpcionesForm required/>
+        <OpcionesForm required valor={equipo} setEquipo ={setEquipo}/>
         <ButtonSubmit> Crear </ButtonSubmit> 
     
             </form>
